@@ -8,19 +8,19 @@ async function getPromise() {
         box.className = 'box';
   
         const name = document.createElement('p');
-        name.textContent = item.name;
+        name.textContent = `username:${item.name}`;
         box.appendChild(name);
   
         const city = document.createElement('p');
-        city.textContent = item.address.city;
+        city.textContent = `city:${item.address.city}`;
         box.appendChild(city);
   
         const email = document.createElement('p');
-        email.textContent = item.email;
+        email.textContent = `email:${item.email}`;
         box.appendChild(email);
   
         const phone = document.createElement('p');
-        phone.textContent = item.phone;
+        phone.textContent = `phone:${item.phone}`;
         box.appendChild(phone);
   
         document.body.appendChild(box);
